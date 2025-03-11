@@ -1,5 +1,4 @@
 
-import React from 'react';
 import profile from '/profile.jpg';
 import '../style/App.css';
 

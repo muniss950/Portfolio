@@ -1,7 +1,7 @@
 
 
-import React from 'react';
-import logo from '../logo.svg';
+// import React from 'react';
+// import logo from '../logo.svg';
 import '../style/App.css';
 import ProjectCard from './projectCard.tsx';
 import projects from '../assets/projects.json';

@@ -13,7 +13,7 @@ function App() {
     <NavBar />
     <About id="about" />
     <Work id="work"/>
-    <Footer id="contact"/>
+    <Footer id="footer"/>
     </div>
   );
 }

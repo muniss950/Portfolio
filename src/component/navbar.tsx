@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import '../style/App.css';
 import { Link } from "react-scroll";
 import logo from '../logo.svg';
