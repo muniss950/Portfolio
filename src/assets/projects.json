@@ -1,0 +1,30 @@
+[
+  {
+    "image":"/project-image/cricket.png",
+    "title": "Cricket Team Selector",
+    "description": "A full-stack web app to select cricket teams based on stats.",
+    "tech": ["MySQL", "Python", "React"],
+    "source":"https://github.com/muniss950/CricketTeamSelector"
+  },
+  {
+    "image":"/project-image/blink.jpg",
+    "title": "Morse Blink",
+    "description": "Converts Morse code indicated by the blinking of your eye to text and audio ",
+    "tech": ["Python", "Javascript", "Mediapipe"],
+    "source":"https://github.com/muniss950/Morse-Blink"
+  },
+  {
+    "image":"/project-image/emoji.png",
+    "title": "Emostream",
+    "description": "Concurrent emoji stream over event driver architecture ",
+    "tech": ["Python", "Kafka","Pyspark","Flask"],
+    "source":"https://github.com/muniss950/Emostream"
+  },
+  {
+    "image":"/project-image/matrix.png",
+    "title": "Matrix-Calculator",
+    "description": "Simple Matrix-calculator with Flet frontend",
+    "tech": ["Python", "Flet","Flutter"],
+    "source":"https://github.com/muniss950/Matrix-Calculator"
+  }
+]
