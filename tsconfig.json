@@ -1,4 +1,8 @@
 {
+"compilerOptions": {
+    "typeRoots": ["node_modules/@types"],
+    "types": ["react", "react-dom", "react-scroll"]
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

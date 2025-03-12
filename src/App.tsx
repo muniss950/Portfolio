@@ -6,14 +6,20 @@ import About from './component/about.tsx';
 import Work from './component/work.tsx';
 // import Contact from './component/contact.tsx'
 import Footer from './component/Footer.tsx';
-
+import { Element } from "react-scroll";
 function App() {
   return (
     <div className="flex-auto flex-col font-sans">
     <NavBar />
-    <About id="about" />
-    <Work id="work"/>
-    <Footer id="footer"/>
+    <Element name="about">
+    <About  />
+    </Element>
+    <Element name="work">
+    <Work />
+    </Element>
+    <Element name="footer">
+    <Footer />
+    </Element>
     </div>
   );
 }
