@@ -5,7 +5,7 @@ import logo from '../logo.svg';
 
 function NavBar() {
   return (
-    <header className="flex  flex-auto flex-nowrap overflow-hidden flex-row bg-blue-500 rounded-lg justify-between text-white p-4 shadow-lg sticky top-0 z-50 h-18 min-w-0">
+    <header className="flex  flex-auto flex-nowrap  flex-row bg-blue-500 rounded-lg justify-between text-white p-4 shadow-lg sticky top-0 z-50 h-32 min-w-0">
       <div className="flex flex-row content-center min-w-0">
         <img className="size-13 content-center"src={logo} alt="logo" />
         <h1 className="text-2xl font-bold content-center">Munis Shafiq</h1>
