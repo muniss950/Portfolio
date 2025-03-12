@@ -9,8 +9,9 @@ import Footer from './component/Footer.tsx';
 import { Element } from "react-scroll";
 function App() {
   return (
-    <div className="flex-auto flex-col font-sans">
+    <div className="flex-auto flex-col h-screen font-sans">
     <NavBar />
+<main className="overflow-auto">
     <Element name="about">
     <About  />
     </Element>
@@ -20,6 +21,7 @@ function App() {
     <Element name="footer">
     <Footer />
     </Element>
+    </main>
     </div>
   );
 }

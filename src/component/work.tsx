@@ -15,8 +15,8 @@ import Skills from './skillCard.tsx';
 // };
 function Work() {
   return (
-    <div className="flex flex-col gap-5 h-screen">
-      <div className="work flex flex-col gap-5 h-screen">
+    <div className="flex flex-col gap-5 min-h-[calc(100vh-64px)]">
+      <div className="work flex flex-col gap-5">
         <h1 className="font-bold text-5xl text-center">My projects</h1>
 
         <div className="projects flex flex-wrap gap-5 justify-center justify-items-center">

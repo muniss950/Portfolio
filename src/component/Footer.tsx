@@ -3,7 +3,7 @@ import { Linkedin, Github, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-blue-600 text-white py-6 h-screen">
+    <footer id="contact" className="bg-blue-600 text-white py-6 ">
     <h1 className="text-6xl text-center">Follow me</h1>
       <div className="container mx-auto flex flex-col items-center justify-center space-y-4 py-1">
         {/* Social Links */}
