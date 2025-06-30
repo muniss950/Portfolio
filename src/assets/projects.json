@@ -1,5 +1,19 @@
 [
   {
+    "image":"/project-image/kubernetes.png",
+    "title": "Kubernetes Cluster Simulator",
+    "description": "Kubernetes Cluster Simulator that emulates the core functionalities of a container orchestration system .",
+    "tech": ["Golang","Gin","Docker"],
+    "source":"https://github.com/muniss950/kubernetes-cluster-simulator"
+  },
+  {
+    "image":"/project-image/food.png",
+    "title": "Online Food App",
+    "description": "A Java-based food delivery platform implementing multiple design patterns (Builder, Observer, Facade) with Spring Boot backend, connecting customers, restaurants and delivery agents through a comprehensive order management system.",
+    "tech": ["Java","Springboot","MySQL"],
+    "source":"https://github.com/muniss950/OnlineFoodApp"
+  },
+  {
     "image":"/project-image/cricket.png",
     "title": "Cricket Team Selector",
     "description": "A full-stack web app to select cricket teams based on stats.",
@@ -26,5 +40,12 @@
     "description": "Simple Matrix-calculator with Flet frontend",
     "tech": ["Python", "Flet","Flutter"],
     "source":"https://github.com/muniss950/Matrix-Calculator"
+  },
+  {
+    "image":"/project-image/portfolio.png",
+    "title": "Portfolio",
+    "description": "Simple Portfolio website written in typescript",
+    "tech": ["Typescript", "Tailwind"],
+    "source":"https://github.com/muniss950/Portfolio"
   }
 ]
