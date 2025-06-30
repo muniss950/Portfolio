@@ -1,8 +1,5 @@
 
-import React from 'react';
-// import logo from '../logo.svg';
-import '../style/App.css';
-import { useState } from "react";
+import React, { useState } from "react";
 
 interface Project {
   image: string;
@@ -11,46 +8,42 @@ interface Project {
   tech: string[];
   source: string;
 }
-// const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
-//   const [isHovered, setIsHovered] = useState(false);
-//   return (
-//     <a href={project.source} className="block">
-//       <div className="project-card bg-white border border-gray-200 rounded-lg shadow-sm w-90 h-100 hover:shadow-xl" onMouseEnter={() => setIsHovered(true)}
-//         onMouseLeave={() => setIsHovered(false)}>
-//         <img className="overflow-hidden" src={project.image} />
-//         <div className="project-info">
-//           <h2 className="font-sans font-bold text-center text-2xl">{project.title}</h2>
-//           <div className="project-desc">
-//           {isHovered && <p className="font-sans text text-center">{project.description}</p>}
-//
-//             <p className="text-xl text-center"><strong>Tech Stack:</strong> {project.tech.join(', ')}</p>
-//           </div>
-//         </div>
-//       </div>
-//     </a>
-//
-//   );
-// }
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <a href={project.source} className="block">
+    <a
+      href={project.source}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block"
+    >
       <div
-        className="project-card bg-white border border-gray-200 rounded-lg shadow-sm w-90 h-100 hover:shadow-xl overflow-hidden"
+        className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 w-72 md:w-80 overflow-hidden cursor-pointer"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Image fully fills the card with rounded edges */}
-        <img className="w-full h-48 object-cover rounded-t-lg" src={project.image} alt={project.title} />
+        <img
+          className="w-full h-48 object-cover"
+          src={project.image}
+          alt={project.title}
+        />
+        <div className="p-4 space-y-2">
+          <h2 className="font-semibold text-xl text-center">{project.title}</h2>
 
-        <div className="project-info p-4">
-          <h2 className="font-sans font-bold text-center text-2xl">{project.title}</h2>
-          <div className="project-desc">
-            {isHovered && <p className="font-sans text text-center">{project.description}</p>}
-            <p className="text-xl text-center"><strong>Tech Stack:</strong> {project.tech.join(', ')}</p>
+          <div
+            className={`text-sm text-gray-700 text-center transition-opacity duration-300 ${
+              isHovered ? "opacity-100" : "opacity-0 h-0"
+            }`}
+          >
+            {project.description}
           </div>
+
+          <p className="text-center text-gray-800 text-sm">
+            <span className="font-medium">Tech Stack:</span>{" "}
+            {project.tech.join(", ")}
+          </p>
         </div>
       </div>
     </a>

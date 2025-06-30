@@ -1,10 +1,7 @@
-// import React from 'react';
-// import logo from './logo.svg';
 import './style/App.css';
 import NavBar from './component/navbar.tsx';
 import About from './component/about.tsx';
 import Work from './component/work.tsx';
-// import Contact from './component/contact.tsx'
 import Footer from './component/Footer.tsx';
 
 import { motion } from "framer-motion";
@@ -17,16 +14,14 @@ const fadeVariants = {
 
 export default function App() {
   return (
-    <div className="flex flex-col h-screen font-sans">
+    <div className="flex flex-col min-h-screen font-sans bg-gray-50 text-gray-900">
       <NavBar />
 
-      <main className="flex-50 ">
-
-        <Element name="about" >
+      <main className="flex flex-col flex-1">
+        <Element name="about">
           <motion.div
             initial="hidden"
             whileInView="visible"
-            exit="hidden"
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             variants={fadeVariants}
@@ -36,11 +31,10 @@ export default function App() {
           </motion.div>
         </Element>
 
-        <Element name="work" >
+        <Element name="work">
           <motion.div
             initial="hidden"
             whileInView="visible"
-            exit="hidden"
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             variants={fadeVariants}
@@ -50,8 +44,8 @@ export default function App() {
           </motion.div>
         </Element>
 
-        <Element name="footer" >
-            <Footer />
+        <Element name="footer">
+          <Footer />
         </Element>
       </main>
     </div>
