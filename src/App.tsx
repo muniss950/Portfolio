@@ -14,7 +14,8 @@ const fadeVariants = {
 
 export default function App() {
   return (
-    <div className="flex flex-col min-h-screen font-sans bg-white text-gray-900" style={{ backgroundImage: "url('rocket_launch.png')" }}>
+    <div className="flex flex-col min-h-screen font-sans bg-white text-gray-900" 
+    style={{ backgroundImage: "url('material_pastel_4.jpg')" }}>
       <NavBar />
 
       <main className="flex flex-col flex-1 bg-white-200/50 backdrop-blur-sm">
