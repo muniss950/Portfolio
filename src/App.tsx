@@ -14,10 +14,10 @@ const fadeVariants = {
 
 export default function App() {
   return (
-    <div className="flex flex-col min-h-screen font-sans bg-gray-50 text-gray-900">
+    <div className="flex flex-col min-h-screen font-sans bg-white text-gray-900" style={{ backgroundImage: "url('rocket_launch.png')" }}>
       <NavBar />
 
-      <main className="flex flex-col flex-1">
+      <main className="flex flex-col flex-1 bg-white-200/50 backdrop-blur-sm">
         <Element name="about">
           <motion.div
             initial="hidden"
@@ -35,7 +35,7 @@ export default function App() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             variants={fadeVariants}
             className="w-full"

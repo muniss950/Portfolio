@@ -3,7 +3,7 @@ import '../style/App.css';
 
 function About() {
   return (
-    <div className="flex flex-col md:flex-row justify-around items-center gap-10 min-h-[calc(100vh-64px)] bg-gray-200 px-6 py-12">
+    <div className="flex flex-col md:flex-row justify-around items-center gap-10 min-h-[calc(100vh-64px)]  px-6 py-12 ">
       {/* Profile Image */}
       <div className="flex justify-center flex-shrink-0">
         <img

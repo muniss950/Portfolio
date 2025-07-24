@@ -6,7 +6,7 @@ import logo from '../logo.svg';
 
 function NavBar() {
   return (
-    <header className="flex justify-between items-center bg-[#222831] rounded-lg p-4 shadow-lg sticky top-0 z-50 h-15">
+    <header className="flex justify-between items-center bg-black/70 rounded-lg p-4 sticky top-0 z-50 h-15 backdrop-blur-sm shadow-md">
       {/* Logo + Title */}
       <div className="flex items-center space-x-4">
         <img className="h-12 w-12" src={logo} alt="logo" />

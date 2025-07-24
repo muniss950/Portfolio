@@ -20,7 +20,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
       className="block"
     >
       <div
-        className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 w-72 md:w-80 overflow-hidden cursor-pointer"
+        className="bg-white/50 backdrop-blur-md border border-gray-200 rounded-md shadow-sm hover:shadow-lg transition-shadow duration-300 w-72 md:w-80 overflow-hidden cursor-pointer"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
