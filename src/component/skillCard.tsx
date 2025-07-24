@@ -3,7 +3,7 @@ import React from "react";
 
 const SkillCard: React.FC<{ icon: string; name: string }> = ({ icon, name }) => {
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-900 text-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300 p-4 w-32 h-32">
+    <div className="flex flex-col items-center justify-center bg-blue-900/70 background-blue-sm text-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300 p-4 w-32 h-32">
       <img
         src={`https://skillicons.dev/icons?i=${icon}`}
         alt={name}

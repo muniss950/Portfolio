@@ -15,8 +15,8 @@ function About() {
 
       {/* Text Content */}
       <div className="max-w-2xl text-center md:text-left space-y-6">
-        <h1 className="font-bold text-4xl">Munis Shafiq</h1>
-        <p className="text-lg text-gray-700">
+        <h1 className="font-bold text-gray-700 text-4xl">Munis Shafiq</h1>
+        <p className="text-lg text-gray-600">
           Passionate and dedicated B.Tech Computer Science student at PES University, Bangalore, India, with a strong foundation in algorithms, data structures, and software development. Enthusiastic about problem-solving, web development, and emerging technologies. Seeking opportunities to apply technical knowledge in real-world applications.
         </p>
       </div>
